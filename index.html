@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv= "X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV DE DARIO CASTILLO</title>
+    <link rel="icon" type="image/x-icon" href="file:///C:/Users/DARIO%20CASTILLO/Downloads/DC_Comics_logo.svg.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani&family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Open Graph data -->
+ <meta property="og:title" content="CV DE DARIO CASTILLO" />
+ <meta property="og:type" content="CV" />
+ <meta property="og:url" content=" http://www.example.com" />
+ <meta property="og:image" content=" http://example.com/image.jpg" />
+ <meta property="og:description" content="PROYECTO FINAL 2023" />  
+ <link rel="stylesheet" type="text/css" href="css/estillo.css" />
+</head>
+<body>
+<head> <h1>CURRICULUM VITAE DE DARIO ALBERTO CASTILLO</h1>
+  <img src="C:\Users\DARIO CASTILLO\Pictures\DARIOAC.jpg" alt="no se pudo carga la imagen intente otra vez" height="200px" width="200px"> </head>
+
+<nav> <h2>APELLIDO: CASTILLO</h2>
+  <h2>NOMBRE: DARIO ALBERTO</h2>
+
+  <h3>FECHA DE NACIMIENTO:</h3>
+   <P> 12 de octubre de 1923</P>
+   <h3>EDAD:</h3>
+   <P>99</P>
+  <h3>LUGAR DE NACIMIENTO:</h3>
+  <P>Mar del Plata, Provincia de Buenos Aires. Argentina</P>
+  <h3>NACIONALIDAD:</h3>
+  <p>Argentina</p>
+  <h3>DOMICILIO:</h3>
+  <P>Avenida SAN MARTIN 1212, MAR DEL PLATA. (CP 7600)</P>
+  <h3>TELEFONO:</h3>
+  <P>(0223)122-121212</P>
+  <h3>MAIL:</h3>
+  <P> DARIOCASTILLO@GMAIL.COM</P>
+  <h3>EDUCACION:  </h3>
+  <p id="demo">Estudios Secundarios completos realizados en la Escuela de EDUCACION MEDIA 3 DE MAR DEL PLATA.</p>
+
+  <button type="button"  id= "boton">TITULO</button>
+
+  <script src="JS/function.js"></script>
+
+
+  <p id="ESTUDIO2">Estudios terciario completos realizados en la Universidad Nacional de MAR DEL PLATA.</p>
+  <button type="button" onclick="myFunction2()">TITULO</button>
+  <script>
+    function myFunction2() {
+      document.getElementById("ESTUDIO2").innerHTML = "ABOGADO.";
+    }
+    </script>
+    
+
+  <h3>PLAYLIST FAVORITA:</h3>
+  <p>1-SODA STEREO:</p>
+  <audio controls>
+    <source src="C:\Users\DARIO CASTILLO\Music\Soda Stereo\Me verás Volver - Hits & +\Soda Stereo - 11 - En la ciudad de la furia.ogg " type="audio/ogg">
+    <source src="C:\Users\DARIO CASTILLO\Music\Soda Stereo\Me verás Volver - Hits & +\Soda Stereo - 11 - En la ciudad de la furia.mp3 " type="audio/mpeg">
+  tu navegador no soporta este formato de audio.
+  </audio>
+  <p>2-PAULO LONDRA:</p>
+  <audio controls>
+    <source src="C:\Users\DARIO CASTILLO\Music\Paulo Londra - Homerun (2019)\Paulo Londra - Tal Vez.ogg" type="audio/ogg">
+    <source src="C:\Users\DARIO CASTILLO\Music\Paulo Londra - Homerun (2019)\Paulo Londra - Tal Vez.mp3" type="audio/mpeg">
+  tu navegadro no soporta este formato de audio.
+  </audio>
+<h3>PELICULA PREFERIDA:</h3>
+<p>TERMINATOR 2</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0TMlTdoNG6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>ESTA ES LA MEJOR PELICULA PARA VER !!!</p>
+  
+<p id="demo20">COLOR FONDO CV:</p>
+
+    <button type="button"  id= "boton34">NUEVO COLOR</button>
+    
+    <button type="button"  id= "boton221">RESTABLECER COLOR</button>
+
+    <script src="JS/function.js"></script>
+
+    
+    
+  <script>
+      const persona = {"NOMBRE":"DARIO ALBERTO", "APELLIDO": "CASTILLO", "EDAD":"99","NACIONALIDAD": "ARGENTINO"};
+      const obj = JSON.parse(persona);
+      console.log(obj);
+      document.getElementById("demo333").innerHTML = 
+      "NOMBRE:"+Object.NOMBRE+
+      "APELLIDO:"+Object.APELLIDO+
+      "EDAD:"+Object.EDAD+
+      "NACIONALIDAD"+Object.NACIONALIDAD;
+    </script>
+
+
+
+  
+</nav>
+<footer>
+  <h2>GEOLOCALIZACION</h2>
+  <p>Click en el boton para coordenadas.</p>
+  
+  <button onclick="getLocation()">aqui</button>
+  
+  <p id="demo5555"></p>
+  
+  <script>
+  const x = document.getElementById("demo5555");
+  
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.watchPosition(showPosition);
+    } else { 
+      x.innerHTML = "Geolocalizacion no funciona en tu navegador.";
+    }
+  }
+      
+  function showPosition(position) {
+      x.innerHTML="Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude;
+  }
+  </script>
+
+
+  
+  <h2>comentario final:</h2>
+  <p>Clik en el boton</p>
+  
+  <button onclick="alert('Un Coordial Saludo para todos!!')">aqui</button>
+  
+
+
+
+
+
+
+
+
+  
+ 
+  
+
+
+  
+
+
+</footer>
+  
+   
+    
+         
+     
+</body>
+</html>
